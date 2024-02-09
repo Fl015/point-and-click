@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    
+
     <div id="title">
         <h1 id="mainTitle">something</h1>
     </div>
@@ -17,39 +17,47 @@
     <div id="gameWindow">
 
         <!--inventory box-->
-        <div id="inventoryBox">'
-
+        <div id="inventoryBox" class="foreground">
+            <ul id="inventoryList">
+            </ul>
         </div>
 
         <!--Diolog Bar-->
-        <div id="diologBar">
+        <div id="diologBar" class="foreground">
             <div id="setMainDiolog">
                 <!--Hero UI-->
-                <div id="heroAvatar">
+                <div id="heroAvatar" class="foreground">
 
                 </div>
-                <div id="heroSpeech">
+                <div id="heroSpeech" class="foreground">
 
                 </div>
                 <!--Counter UI-->
-                <div id="couterSpeech">
+                <div id="couterSpeech" class="foreground">
 
                 </div>
-                <div id="counterChatacter">
+                <div id="counterAvatar" class="foreground">
 
                 </div>
             </div>
         </div>
+
+
+        <!--Foreground elements-->
+        <div id="squareTree" class="foreground"></div>
+
+        <div id="key" class="foreground"></div>
+        <ul>
+            <li id="inv-key">key</li>
+        </ul>
+        <!--Main Character-->
+        <div id="hero" class="character"></div>
+
+        <!--Background Elements-->
+        <div id="tileMap" class="background"></div>
+
     </div>
-
-    <!--Foreground elements-->
-    <div id="squareTree"></div>
-
-    <!--Main Character-->
-    <div id="hero"></div>
-
-    <!--Background Elements-->
-    <div id="tileMap"></div>
 </body>
 
 </html>
+<script src="js/main.js"></script>

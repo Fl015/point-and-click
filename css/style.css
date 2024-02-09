@@ -1,0 +1,128 @@
+body {
+    display: grid;
+    grid-template-columns: auto 800px auto;
+    grid-template-rows: auto 608px auto;
+}
+
+#title {
+    grid-column-start: 2;
+    grid-row-start: 1;
+}
+
+#gameWindow {
+    width: 800px;
+    height: 608px;
+
+    background-color: #0022fe;
+
+    grid-column-start: 2;
+    grid-row-start: 2;
+
+    position: relative;
+}
+
+#inventoryBox {
+    width: 180px;
+    height: 80px;
+
+    background-color: #000000;
+
+    top: 10px;
+    left: 10px;
+    color: white
+}
+
+#diologBar {
+    bottom: 0px;
+}
+
+#setMainDiolog {
+    position: relative;
+
+    width: 800px;
+    height: 64px;
+
+    background-color: #442c1c;
+}
+
+#heroAvatar {
+    width: 100px;
+    height: 100px;
+
+    background-color: #fe9400;
+
+    bottom: 0px;
+    left: 0px;
+}
+
+#heroSpeech {
+    width: 300px;
+
+    background-color: #FFFFFF;
+}
+
+#couterSpeech {
+    width: 300px;
+
+    background-color: #FFFFFF;
+}
+
+#counterAvatar {
+    width: 100px;
+    height: 100px;
+
+    background-color: #FF0000;
+
+    bottom: 0px;
+    right: 0px;
+}
+
+#squareTree {
+    width: 64px;
+    height: 64px;
+
+    background-color: #00ff22;
+
+    transition: all 1s ease-in-out;
+
+    left: 400px;
+    top: 150px;
+}
+
+#key {
+    width: 32px;
+    height: 32px;
+
+    background-color: #fffb00;
+
+    transition: all 1s ease-in-out;
+
+    left: 440px;
+    top: 150px;
+}
+
+#hero {
+    width: 32px;
+    height: 32px;
+
+    background-color: #fe00cb;
+}
+
+#tileMap {}
+
+.background {
+    position: absolute;
+    z-index: 0;
+}
+
+.character {
+    position: absolute;
+    z-index: 100;
+
+    transition: all 1s ease-in-out;
+}
+
+.foreground {
+    position: absolute;
+    z-index: 1000;
+}
