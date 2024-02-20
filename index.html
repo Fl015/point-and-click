@@ -4,36 +4,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flo's Point and Click adventure.</title>
+    <title>Flo's point and click adventure</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-
     <div id="title">
-        <h1 id="mainTitle">something</h1>
+        <h1 id="mainTitle">Flo's point and click game</h1>
     </div>
-
     <div id="gameWindow">
-
-        <!--inventory box-->
+        <!--Inventory box-->
         <div id="inventoryBox" class="foreground">
             <ul id="inventoryList">
             </ul>
         </div>
-
-        <!--Diolog Bar-->
-        <div id="diologBar" class="foreground">
-            <div id="setMainDiolog">
-                <!--Hero UI-->
+        <!--dialog bar-->
+        <div id="dialogBar" class="foreground">
+            <div id="setMainDialog">
                 <div id="heroAvatar" class="foreground">
 
                 </div>
                 <div id="heroSpeech" class="foreground">
 
                 </div>
-                <!--Counter UI-->
-                <div id="couterSpeech" class="foreground">
+                <div id="counterSpeech" class="foreground">
 
                 </div>
                 <div id="counterAvatar" class="foreground">
@@ -41,20 +35,20 @@
                 </div>
             </div>
         </div>
-
-
         <!--Foreground elements-->
-        <div id="squareTree" class="foreground"></div>
-
         <div id="key" class="foreground"></div>
-        <ul>
-            <li id="inv-key">key</li>
-        </ul>
-        <!--Main Character-->
-        <div id="hero" class="character"></div>
 
-        <!--Background Elements-->
-        <div id="tileMap" class="background"></div>
+        <div id="well" class="foreground"></div>
+        <div id="doorWizardHut" class="foreground"></div>
+        <!--Main Character-->
+        <div id="hero" class="character">
+            <img src="img/animated-character-1-idle.gif" alt="hero charcater" id="heroImage">
+        </div>
+
+        <!--Background elements-->
+        <div id="tileMap" class="background">
+            <img src="img/tilemap1.jpg" alt="tilemap" draggable="false">
+        </div>
 
     </div>
 </body>

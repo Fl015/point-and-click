@@ -12,67 +12,54 @@ body {
 #gameWindow {
     width: 800px;
     height: 608px;
-
     background-color: #0022fe;
-
     grid-column-start: 2;
     grid-row-start: 2;
-
     position: relative;
 }
 
 #inventoryBox {
     width: 180px;
     height: 80px;
-
     background-color: #000000;
-
     top: 10px;
     left: 10px;
     color: white
 }
 
-#diologBar {
+#dialogBar {
     bottom: 0px;
 }
 
-#setMainDiolog {
+#setMainDialog {
     position: relative;
-
     width: 800px;
     height: 64px;
-
     background-color: #442c1c;
 }
 
 #heroAvatar {
     width: 100px;
     height: 100px;
-
     background-color: #fe9400;
-
     bottom: 0px;
     left: 0px;
 }
 
 #heroSpeech {
     width: 300px;
-
     background-color: #FFFFFF;
 }
 
-#couterSpeech {
+#counterSpeech {
     width: 300px;
-
     background-color: #FFFFFF;
 }
 
 #counterAvatar {
     width: 100px;
     height: 100px;
-
     background-color: #FF0000;
-
     bottom: 0px;
     right: 0px;
 }
@@ -80,32 +67,47 @@ body {
 #squareTree {
     width: 64px;
     height: 64px;
-
-    background-color: #00ff22;
-
-    transition: all 1s ease-in-out;
-
+    background-color: #00ff00;
     left: 400px;
     top: 150px;
+    opacity: 1;
+    transition: all 1s ease-in-out;
+
 }
 
 #key {
     width: 32px;
     height: 32px;
-
     background-color: #fffb00;
-
+    left: 416px;
+    top: 166px;
+    opacity: 1;
     transition: all 1s ease-in-out;
+}
 
-    left: 440px;
-    top: 150px;
+#well {
+    width: 64px;
+    height: 64px;
+    background-color: #FF0000;
+    left: 288px;
+    top: 96px;
+}
+
+#doorWizardHut {
+    width: 32px;
+    height: 64px;
+    background-color: #FF0000;
+    left: 177px;
+    top: 287px;
 }
 
 #hero {
+    top: 0px;
+    left: 0px;
     width: 32px;
     height: 32px;
+    transition: all 1s ease-in-out;
 
-    background-color: #fe00cb;
 }
 
 #tileMap {}
@@ -118,8 +120,6 @@ body {
 .character {
     position: absolute;
     z-index: 100;
-
-    transition: all 1s ease-in-out;
 }
 
 .foreground {
