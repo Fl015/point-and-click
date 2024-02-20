@@ -39,9 +39,8 @@ body {
 }
 
 #heroAvatar {
-    width: 100px;
-    height: 100px;
-    background-color: #fe9400;
+    width: 72px;
+    height: 68px;
     bottom: 0px;
     left: 0px;
 }
@@ -78,9 +77,8 @@ body {
 #key {
     width: 32px;
     height: 32px;
-    background-color: #fffb00;
-    left: 416px;
-    top: 166px;
+    left: 96px;
+    top: 445px;
     opacity: 1;
     transition: all 1s ease-in-out;
 }
@@ -88,7 +86,6 @@ body {
 #well {
     width: 64px;
     height: 64px;
-    background-color: #FF0000;
     left: 288px;
     top: 96px;
 }
@@ -96,18 +93,24 @@ body {
 #doorWizardHut {
     width: 32px;
     height: 64px;
-    background-color: #FF0000;
     left: 177px;
     top: 287px;
 }
 
 #hero {
-    top: 0px;
-    left: 0px;
+    top: 390px;
+    left: 267px;
     width: 32px;
     height: 32px;
     transition: all 1s ease-in-out;
 
+}
+
+#statue {
+    width: 32px;
+    height: 64px;
+    top: 285px;
+    left: 704px;
 }
 
 #tileMap {}
