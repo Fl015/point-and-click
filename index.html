@@ -4,13 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flo's point and click adventure</title>
+    <title>Point and click adventure</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <div id="title">
-        <h1 id="mainTitle">Flo's point and click game</h1>
+        <h1 id="mainTitle">something</h1>
     </div>
     <div id="gameWindow">
         <!--Inventory box-->
@@ -22,24 +22,26 @@
         <div id="dialogBar" class="foreground">
             <div id="setMainDialog">
                 <div id="heroAvatar" class="foreground">
-                    <img src="img/portairt.png" alt="heroAvatar">
+                    <img src="img/portairt.png" alt="hero avatar">
                 </div>
-                <div id="heroSpeech" class="foreground">
-
+                <div id="heroSpeech" class="foreground speechBubble">
+                    ...
                 </div>
-                <div id="counterSpeech" class="foreground">
-
+                <div id="counterSpeech" class="foreground speechBubble">
+                    ...
                 </div>
                 <div id="counterAvatar" class="foreground">
-                    <img src="img/portairStatue.png" alt="counterAvatar">
+                    <img src="img/portairStatue.png" alt="Counter avatar">
                 </div>
+                <div id="brownBar" class="background"></div>
             </div>
         </div>
         <!--Foreground elements-->
         <div id="key" class="foreground"></div>
-
         <div id="well" class="foreground"></div>
         <div id="doorWizardHut" class="foreground"></div>
+        <div id="statue" class="foreground"></div>
+
         <!--Main Character-->
         <div id="hero" class="character">
             <img src="img/animated-character-1-idle.gif" alt="hero charcater" id="heroImage">
@@ -51,6 +53,16 @@
         </div>
 
     </div>
+
+    <audio id="heroAudio">
+        <source src="audio/Gibberish - Sound Effect_01.mp3">
+    </audio>
+
+    <audio id="counterAudio">
+        <source src="audio/high pitch voice.mp3">
+    </audio>
+
+
 </body>
 
 </html>
