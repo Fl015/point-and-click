@@ -4,7 +4,33 @@ body {
     grid-template-rows: auto 608px auto;
 }
 
+#videoPlayer {
+    width: 540px;
+    height: 470px;
+    top: 16000px;
+    left: 600px;
+    opacity: 0;
+}
+
+#woods1 {
+    width: 283px;
+    height: 210px;
+    top: auto;
+    left: auto;
+    opacity: 0;
+}
+
+#woods2 {
+    width: 183px;
+    height: 172px;
+    top: auto;
+    left: auto;
+    opacity: 0;
+}
+
 #title {
+    width: 800px;
+    height: 100px;
     grid-column-start: 2;
     grid-row-start: 1;
 }
@@ -14,7 +40,7 @@ body {
     height: 608px;
     background-color: #0022fe;
     grid-column-start: 2;
-    grid-row-start: 2;
+    grid-row-start: 1.5;
     position: relative;
 }
 
@@ -62,11 +88,51 @@ body {
 }
 
 #counterAvatar {
+    width: 144px;
+    height: 136px;
+    bottom: 0px;
+    right: -30px;
+    opacity: 0;
+}
+
+#woods {
+    width: 448px;
+    height: 90px;
+    left: 0px;
+    top: 0px;
+}
+
+#kurt {
+    width: 32px;
+    height: 64px;
+}
+
+#kurtangle {
+    width: 32px;
+    height: 64px;
+    left: 680px;
+    top: 325px;
+}
+
+#bigman {
+    width: 144px;
+    height: 136px;
+    bottom: 0px;
+    right: -30px;
+
+}
+
+#counterAvatar2 {
     width: 72px;
     height: 68px;
-    bottom: 0px;
-    right: 0px;
+    bottom: 45px;
+    right: 19px;
     opacity: 0;
+}
+
+#goblin {
+    width: 144px;
+    height: 136px;
 }
 
 #brownBar {
@@ -74,17 +140,6 @@ body {
     height: 32px;
     width: 800px;
     background-color: #442c1c;
-}
-
-#squareTree {
-    width: 64px;
-    height: 64px;
-    background-color: #00ff00;
-    left: 400px;
-    top: 150px;
-    opacity: 1;
-    transition: all 1s ease-in-out;
-
 }
 
 #key {
@@ -96,25 +151,43 @@ body {
     transition: all 1s ease-in-out;
 }
 
-#well {
-    width: 64px;
-    height: 64px;
-    left: 288px;
-    top: 96px;
+#ladder {
+    width: 16px;
+    height: 16px;
+    left: 336px;
+    top: 383px;
+    opacity: 0;
 }
 
-#doorWizardHut {
-    width: 32px;
-    height: 64px;
-    left: 177px;
-    top: 287px;
+#doorInWall {
+    width: 16px;
+    height: 32px;
+    left: 672px;
+    top: 175px;
+    opacity: 0;
 }
 
-#statue {
-    width: 32px;
+#statues {
+    width: 176px;
     height: 64px;
-    left: 704px;
-    top: 287px;
+    left: 607px;
+    top: 306px;
+}
+
+#bush {
+    width: 32px;
+    height: 32px;
+    left: 64px;
+    top: 432px;
+    opacity: 0;
+}
+
+#escapePortal {
+    width: 48px;
+    height: 40px;
+    left: 528px;
+    top: 32px;
+    opacity: 0;
 }
 
 #hero {

@@ -10,10 +10,24 @@
 
 <body>
 
+    <!--Woods elements-->
+
+    <div id="woods1">
+        <img src="img/woods1.jpg" alt="woods1" id="woods1pic">
+    </div>
+    <div id="woods2">
+        <img src="img/woods2.jpeg" alt="woods1" id="woods2pic">
+    </div>
+    <div id="videoPlayer" class="foreground" style="opacity: 0;">
+        <iframe id="youtubeVideo" width="540" height="470" src="https://www.youtube.com/embed/qkDxNr2MGoA?enablejsapi=1"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+    </div>
 
 
     <div id="title">
-        <h1 id="mainTitle">something</h1>
+        <h1 id="mainTitle">test</h1>
     </div>
     <div id="gameWindow">
         <!--Inventory box-->
@@ -34,28 +48,43 @@
                     ...
                 </div>
                 <div id="counterAvatar" class="foreground">
-                    <img src="img/portairStatue.png" alt="Counter avatar">
+                    <img id="bigman" src="img/portairStatue.gif" alt="Counter avatar">
+                </div>
+                <div id="counterAvatar2" class="foreground">
+                    <img id="goblin" src="img/portairStatue2.png" alt="Counter avatar">
                 </div>
                 <div id="brownBar" class="background"></div>
             </div>
         </div>
+
         <!--Foreground elements-->
-        <div id="key" class="foreground"></div>
-        <div id="well" class="foreground"></div>
-        <div id="doorWizardHut" class="foreground"></div>
-        <div id="statue" class="foreground"></div>
+
+        <div id="escapePortal" class="foreground"></div>
+        <div id="doorInWall" class="foreground"></div>
+        <div id="kurtangle" class="foreground">
+            <img src="img/kurtangle.png" alt="Kurt Angle" id="kurt" class="foreground">
+        </div>
+        <div id="statues" class="foreground"></div>
+        <div id="bush" class="foreground"></div>
+        <div id="ladder" class="foreground"></div>
+        <div id="woods" class="foreground"></div>
 
         <!--Main Character-->
-        <div id="hero" class="character">
+
+        <div id="hero" class="character foreground">
             <img src="img/animated-character-1-idle.gif" alt="hero charcater" id="heroImage">
         </div>
 
         <!--Background elements-->
+
         <div id="tileMap" class="background">
             <img src="img/tilemap1.jpg" alt="tilemap" draggable="false">
         </div>
 
     </div>
+
+    <!--Audio elements-->
+
 
     <audio id="heroAudio">
         <source src="audio/Gibberish - Sound Effect_01.mp3">
@@ -65,7 +94,20 @@
         <source src="audio/high pitch voice.mp3">
     </audio>
 
+    <audio id="laughAudio">
+        <source src="audio/laughAudio.mp3">
+    </audio>
+
+    <audio id="woodsAudio">
+        <source src="audio/woods.mp3">
+    </audio>
+
+    <audio id="audioPlayer">
+        <source src="audio/finished.mp3>
+    </audio>
+
 </body>
 
 </html>
-<script src="js/main.js"></script>
+<script src=" js/main.js">
+        </script>
