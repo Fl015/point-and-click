@@ -4,6 +4,14 @@ body {
     grid-template-rows: auto 608px auto;
 }
 
+#reloadButton {
+    height: 20px;
+    width: 100px;
+    top: -179px;
+    left: 1200px;
+    position: relative;
+}
+
 #videoPlayer {
     width: 540px;
     height: 470px;
@@ -198,8 +206,6 @@ body {
     transition: all 1s ease-in-out;
 
 }
-
-#tileMap {}
 
 .background {
     position: absolute;

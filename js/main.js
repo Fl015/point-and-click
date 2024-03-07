@@ -59,10 +59,6 @@ function runGame() {
 
                     }
 
-                    else {
-                        changeInventory('ruby', "add")
-                    }
-
                     break;
 
                 case "doorInWall":
@@ -132,6 +128,7 @@ function runGame() {
                         setTimeout(showMessage, 8.1 * sec, heroSpeech, "I Think I know where it is!", heroAudio);
                         setTimeout(showMessage, 12.1 * sec, counsterSpeech, "Great, you need to defeat the evil goblin, I got something for you so you dont die! Be safe.", counterAudio);
                         setTimeout(changeInventory, 14.1 * sec, 'totem', "add")
+                        setTimeout(changeInventory, 14.1 * sec, 'magnifying glass', "remove")
                         setTimeout(showMessage, 16.1 * sec, heroSpeech, "I wont let you down kurt!", heroAudio);
 
                         setTimeout(function () { counterAvatar.style.opacity = 0; }, 19 * sec);
@@ -150,7 +147,7 @@ function runGame() {
                         setTimeout(function () { counterAvatar.style.opacity = 0; }, 19 * sec);
                     }
 
-                    else if (checkItem("totem")) {
+                    else if (checkItem("totem" && "sword")) {
                         showMessage(heroSpeech, "Kurt I'm scared...", heroAudio);
                         setTimeout(function () { counterAvatar.style.opacity = 1; }, 4 * sec);
                         setTimeout(showMessage, 4.1 * sec, counsterSpeech, "You can do this traveler, I believe in you", counterAudio);
@@ -166,9 +163,9 @@ function runGame() {
                         setTimeout(showMessage, 8.1 * sec, heroSpeech, "Wait what? Really?", heroAudio);
                         setTimeout(showMessage, 12.1 * sec, counsterSpeech, "If you want the key to the door go search in the maze! Come back when you've found it.", counterAudio);
                         setTimeout(changeInventory, 14.1 * sec, 'magnifying glass', "add")
-                        setTimeout(showMessage, 12.1 * sec, counsterSpeech, "BTW! Before you go make sure you do NOT go too deep in the woods at the top...", counterAudio);
+                        setTimeout(showMessage, 18.1 * sec, counsterSpeech, "BTW! Before you go make sure you do NOT go too deep in the woods at the top...", counterAudio);
 
-                        setTimeout(function () { counterAvatar.style.opacity = 0; }, 16 * sec);
+                        setTimeout(function () { counterAvatar.style.opacity = 0; }, 20 * sec);
                     }
                     break;
 
@@ -176,33 +173,10 @@ function runGame() {
 
                     if (checkItem("ruby")) {
                         showMessage(heroSpeech, "*Screams* I WILL MISS YOU KURT!", heroAudio);
-                        setTimeout(4.1 * sec,
-                            document.getElementById('gamewindow').remove();
+                        setTimeout(4.1 * sec, document.getElementById("gameWindow").remove());
+                        document.getElementById("mainTitle").innerText = "Thanks for playing!";
 
-                        var creditsContainer = document.createElement('div');
-                        creditsContainer.style.textAlign = 'center';
-                        creditsContainer.style.position = 'absolute';
-                        creditsContainer.style.top = '50%';
-                        creditsContainer.style.left = '50%';
-                        creditsContainer.style.transform = 'translate(-50%, -50%)';
-                        creditsContainer.style.fontSize = '24px';
-                        creditsContainer.innerHTML = `
-                        <strong style="font-size: 32px;">Credits</strong><br><br>
-                        in charge of not making me bored: Music, Jaydee, Joshua & Mans<br>
-                        ideas: Floris, Jaydee & Joshua<br>
-                        The rest: Floris
-                    `;
-
-                        // Append the credits container to the body
-                        document.body.appendChild(creditsContainer);
-
-                        // Play the audio
-                        var audioPlayer = document.getElementById('audioPlayer');
-                        audioPlayer.play();
                     }
-
-
-
 
                     else if (checkItem("ruby" && gameState.goodbyeKurt == false)) {
                         showMessage(heroSpeech, "WAIT I HAVE TO GET KURT!", heroAudio);
